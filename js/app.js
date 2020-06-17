@@ -4,12 +4,6 @@
 
 //console.log('this file is connected');
 
-// //convert the input to lowerCase
-
-var upperCaseName = userName.toUpperCase();
-
-// console.log(lowerCaseName);
-
 
 //Prompt user for name
 
@@ -17,7 +11,7 @@ var userName = prompt('What\'s your name?','');
 
 //Greet user
 
-alert('hi ' + upperCaseName + '!');
+alert('hi ' + userName + '!');
 
 //first question
 
@@ -30,16 +24,21 @@ if (lowerCaseQuest1 === ('yes')) {
 else if (lowerCaseQuest1 === ('no')) {
   alert('Correct! I was born in Stanford General hospital in Palo Alto, CA. The same doctor that delivered Dan Marino\'s son delivered me...so I\'m basically famous!');
 }
-else alert('Please enter yes or no');
+else {
+  alert('Please enter yes or no');
+}
 
-var lowerCaseQuest2 = quest2.toLowerCase();
 var quest2 = prompt('Question 2: Have I been to China?', 'yes or no');
+var lowerCaseQuest2 = quest2.toLowerCase();
 
 if (lowerCaseQuest2 === ('yes')) {
   alert('Nice try, but no. I do teach Chinese kids English online, though.');
 }
-if (lowerCaseQuest2 === ('no')) {
+else if (lowerCaseQuest2 === ('no')) {
   alert('Right on. I do telecommute there as superhero  \'Teacher Jacob.\' He\'s just your friendly neighborhood online ESL teacher.');
+}
+else {
+  alert('Please enter yes or no');
 }
 
 var lowerCaseQuest3 = quest3.toLowerCase();
@@ -49,8 +48,12 @@ if (lowerCaseQuest3 === ('yes')) {
   alert('Blah, no! I\'m lactose intolerant!');
 }
 
-if (lowerCaseQuest3 === ('no')) {
+else if (lowerCaseQuest3 === ('no')) {
   alert('Subtle skills, my hu-man! Yeah, I\'m more of a coconut milk kind of guy.');
+}
+
+else {
+  alert('Please enter yes or no');
 }
 
 var lowerCaseQuest4 = quest4.toLowerCase();
@@ -59,8 +62,12 @@ var quest4 = prompt('Question 4: Is my favorite book the Bible?', 'yes or no');
 if (lowerCaseQuest4 === ('yes')) {
   alert('That\'s correct! I prefer to read it in the original language: Hebrew');
 }
-if (lowerCaseQuest4 === ('no')) {
+else if (lowerCaseQuest4 === ('no')) {
   alert('Easy mistake. Still, it\'s the #1 bestseller of all time for a reason. Don\'t believe the anti-hype! At the very, very least it\'s highly relevant to our world!');
+}
+
+else {
+  alert('Please enter yes or no');
 }
 
 var lowerCaseQuest5 = quest5.toLowerCase();
@@ -75,6 +82,4 @@ else if (lowerCaseQuest5 === ('non')) {
 else {
   prompt('please enter yes or no in French!', 'oui or non');
 }
-
-alert('Thanks,' + userName); 
-}
+alert('Thanks,' + userName);

@@ -1,3 +1,66 @@
+body{
+    font-size:30px;
+    line-height:1.5;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-image:url(https://patterncooler.com/gen/index/w/jewish_star_pattern-308.jpg); 
+}
+
+html {
+    overflow-x:hidden
+}
+p {
+    font-size:36px;
+      }
+    
+h1{
+    font-size:60px;
+    text-align: center;
+}
+
+
+h2 {
+    font-size:60px
+}
+
+h3{
+    font-size:24px
+}
+
+h4{
+    font-size:20px
+}
+
+h5{
+    font-size:18px
+}
+
+h6{
+    font-size:16px
+}
+
+div.a {
+    text-align: center;
+  }
+  
+  div.b {
+    text-align: left;
+  }
+  
+  div.c {
+    text-align: right;
+  }
+  
+  div.c {
+    text-align: justify;
+  }
+
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
+
+.letters-wide{letter-spacing:4px}
+
 .navbar {
     overflow: hidden;
     background-color: #333333;
@@ -19,3 +82,22 @@
     background: #ddd;
     color: black;
   }
+
+  img {
+width: 100%; 
+  }
+
+  .teal-container {
+      color:teal;
+    
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ }
