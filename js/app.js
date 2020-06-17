@@ -26,7 +26,15 @@ else if (lowerCaseQuest1 === ('no')) {
 }
 else {
   alert('Please enter yes or no');
+  var tryAgain = prompt('Please enter yes or no. Was I born in Iowa?');
 }
+if (tryAgain === ('yes')) {
+  alert('Nope. I was born in Palo Alto, CA.');
+}
+else if (tryAgain === ('no')) {
+  alert('Correct! I was born in Stanford General hospital in Palo Alto, CA. The same doctor that delivered Dan Marino\'s son delivered me...so I\'m basically famous!');
+}
+
 
 var quest2 = prompt('Question 2: Have I been to China?', 'yes or no');
 var lowerCaseQuest2 = quest2.toLowerCase();
@@ -39,6 +47,7 @@ else if (lowerCaseQuest2 === ('no')) {
 }
 else {
   alert('Please enter yes or no');
+  quest2.prompt;
 }
 
 var lowerCaseQuest3 = quest3.toLowerCase();
@@ -54,6 +63,7 @@ else if (lowerCaseQuest3 === ('no')) {
 
 else {
   alert('Please enter yes or no');
+  quest3.prompt;
 }
 
 var lowerCaseQuest4 = quest4.toLowerCase();
@@ -68,6 +78,7 @@ else if (lowerCaseQuest4 === ('no')) {
 
 else {
   alert('Please enter yes or no');
+  quest4.prompt;
 }
 
 var lowerCaseQuest5 = quest5.toLowerCase();
@@ -81,5 +92,6 @@ else if (lowerCaseQuest5 === ('non')) {
 }
 else {
   prompt('please enter yes or no in French!', 'oui or non');
+  quest5.prompt;
 }
 alert('Thanks,' + userName);
