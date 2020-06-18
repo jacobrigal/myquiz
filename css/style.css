@@ -15,6 +15,15 @@ html {
 p {
     font-size:36px;
       }
+ol {
+    font-size:36px;
+}
+ul {
+    font-size: 36px;
+}
+.lists { 
+    font-size:36px;
+}
     
 h1{
     font-size:60px;
@@ -23,11 +32,11 @@ h1{
 
 
 h2 {
-    font-size:60px
+    font-size:60px !important
 }
 
 h3{
-    font-size:24px
+    font-size:24px !important
 }
 
 h4{
