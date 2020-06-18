@@ -176,6 +176,6 @@ else if (myAnswer4 === myArray[5]) {
 else if (myAnswer5 === myArray[6]) {
   prompt('Wrong. Guess again.');
 }
-else (myAnswer5 === myArray[6]) {
+else (myAnswer5 === myArray[6]); {
   prompt('Wrong. Guess again.');
 }
