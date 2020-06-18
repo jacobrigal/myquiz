@@ -95,11 +95,8 @@ else if (lowerCaseQuest4 === ('no')) {
   alert('Easy mistake. Still, it\'s the #1 bestseller of all time for a reason. Don\'t believe the anti-hype! At the very, very least it\'s highly relevant to our world!');
 }
 
-else {
-  alert('Please enter yes or no');
+var tryAgain4 = prompt('Please enter yes or no. Is the Holy Writ my fav?');
 
-  var tryAgain4 = prompt('Please enter yes or no. Is the Holy Writ my fav?');
-}
 if (tryAgain4 === ('yes')) {
   alert('Solid choice!');
 }
@@ -133,18 +130,52 @@ else if (tryAgain5 === ('non')) {
 }
 console.log('question 5');
 
-alert('Thanks, ' + userName + '!');
 
+var number = 7;
+var guess = prompt('Guess a number: ');
 
-var numberGame = prompt('Guess a number from one to ten!', '');
-
-while (numberGame > 7) {
-  numberGame = prompt('Too high...please enter another number.');
+while (guess !== number) {
+  if (guess === 7) {
+    alert('Good Job!');
+  }
+  if (number < guess) {
+    guess = prompt('You\'ve guessed too high! Keep guessing!');
+  } else {
+    guess = prompt('You\'ve guessed too low! Keep guessing!');
+  }
+  if (guess === 7) {
+    alert('Good Job!');
+  }
 }
-while (numberGame < 7) {
-  numberGame = prompt('Too high...please enter another number.');
+
+var myArray = ['Chicago', 'New York', 'Berlin', 'Paris', 'Hong Kong', 'Tokyo', 'Barcelona'];
+var myAnswer = prompt('What is my favorite city?');
+var myAnswer1 = prompt('What is my favorite city?');
+var myAnswer2 = prompt('What is my favorite city?');
+var myAnswer3 = prompt('What is my favorite city?');
+var myAnswer4 = prompt('What is my favorite city?');
+var myAnswer5 = prompt('What is my favorite city?');
+var myAnswer6 = prompt('What is my favorite city?');
+if (myAnswer === myArray[3])
+{
+  prompt('Right!');
 }
 
-if (numberGame === 7) {
-  alert('You win!');
+else if (myAnswer1 === myArray[1]) {
+  prompt('Wrong. Guess again.');
+}
+else if (myAnswer2 === myArray[2]) {
+  prompt('Wrong. Guess again.');
+}
+else if (myAnswer3 === myArray[4]) {
+  prompt('Wrong. Guess again.');
+}
+else if (myAnswer4 === myArray[5]) {
+  prompt('Wrong. Guess again.');
+}
+else if (myAnswer5 === myArray[6]) {
+  prompt('Wrong. Guess again.');
+}
+else (myAnswer5 === myArray[6]) {
+  prompt('Wrong. Guess again.');
 }
