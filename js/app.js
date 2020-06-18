@@ -46,12 +46,18 @@ else if (lowerCaseQuest2 === ('no')) {
   alert('Right on. I do telecommute there as superhero  \'Teacher Jacob.\' He\'s just your friendly neighborhood online ESL teacher.');
 }
 else {
-  alert('Please enter yes or no');
-  quest2.prompt;
-}
+  var tryAgain2 = prompt('Please enter yes or no. Have I been to China?');
 
-var lowerCaseQuest3 = quest3.toLowerCase();
+  if (tryAgain2 === ('yes')) {
+    alert('Nice try, but no. I do teach Chinese kids English online, though.');
+  }
+  else if (tryAgain2 === ('no')) {
+    alert('Right on. I do telecommute there as superhero  \'Teacher Jacob.\' He\'s just your friendly neighborhood online ESL teacher.');
+  }
+}
+console.log('hi');
 var quest3 = prompt('Question 3: Do I like whole milk?', 'yes or no');
+var lowerCaseQuest3 = quest3.toLowerCase();
 
 if (lowerCaseQuest3 === ('yes')) {
   alert('Blah, no! I\'m lactose intolerant!');
@@ -63,11 +69,24 @@ else if (lowerCaseQuest3 === ('no')) {
 
 else {
   alert('Please enter yes or no');
-  quest3.prompt;
 }
 
-var lowerCaseQuest4 = quest4.toLowerCase();
+var tryAgain3 = prompt('Please enter yes or no. Hint: S-y Yah later.');
+
+
+if (tryAgain3 === ('yes')) {
+  alert('Explosively, with a side of  no!');
+}
+
+if (tryAgain3 === ('no')) {
+  alert('Finally, you got it! Yeah, my body doesn\'t make the enzyme required to digest milk. I\'m lactose intolerant!');
+}
+console.log('d');
+
+
 var quest4 = prompt('Question 4: Is my favorite book the Bible?', 'yes or no');
+
+var lowerCaseQuest4 = quest4.toLowerCase();
 
 if (lowerCaseQuest4 === ('yes')) {
   alert('That\'s correct! I prefer to read it in the original language: Hebrew');
@@ -78,20 +97,54 @@ else if (lowerCaseQuest4 === ('no')) {
 
 else {
   alert('Please enter yes or no');
-  quest4.prompt;
+
+  var tryAgain4 = prompt('Please enter yes or no. Is the Holy Writ my fav?');
 }
+if (tryAgain4 === ('yes')) {
+  alert('Solid choice!');
+}
+else if (tryAgain4 === ('no')) {
+  alert('Actually I love to read the Hebrew Bible and the Hebrew Gospel of Matthew!');
+}
+console.log('question 4');
+
+var quest5 = prompt('Question 5: Do I speak French?', 'oui or non');
 
 var lowerCaseQuest5 = quest5.toLowerCase();
-var quest5 = prompt('Question 5: Do I speak French?', 'oui or non');
 
 if (lowerCaseQuest5 === ('oui')) {
   alert('Oui, oui!');
 }
-else if (lowerCaseQuest5 === ('non')) {
+else if (lowerCaseQuest5 === ('non'))
+
+{
   alert('Mais, oui! But, yes!');
 }
+
 else {
-  prompt('please enter yes or no in French!', 'oui or non');
-  quest5.prompt;
+
+  var tryAgain5 = prompt('Please enter oui or no. Do I speak French?');
 }
-alert('Thanks,' + userName);
+if (tryAgain5 === ('oui')) {
+  alert('Exactement!');
+}
+else if (tryAgain5 === ('non')) {
+  alert('Faux! I do speak French.');
+}
+console.log('question 5');
+
+alert('Thanks, ' + userName + '!');
+
+
+var numberGame = prompt('Guess a number from one to ten!', '');
+
+while (numberGame > 7) {
+  numberGame = prompt('Too high...please enter another number.');
+}
+while (numberGame < 7) {
+  numberGame = prompt('Too high...please enter another number.');
+}
+
+if (numberGame === 7) {
+  alert('You win!');
+}
