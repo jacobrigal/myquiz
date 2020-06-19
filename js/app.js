@@ -129,9 +129,9 @@ else if (tryAgain5 === ('non')) {
   alert('Faux! I do speak French.');
 }
 console.log('question 5');
+alert('Great job, ' + userName);
 
-
-var number = 7;
+/* var number = 7;
 var guess = prompt('Guess a number: ');
 
 while (guess !== number) {
@@ -179,3 +179,5 @@ else if (myAnswer5 === myArray[6]) {
 else (myAnswer5 === myArray[6]); {
   prompt('Wrong. Guess again.');
 }
+
+*/
